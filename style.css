@@ -1,0 +1,128 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: sans-serif;
+  background-color: #fof2f5;
+  min-height: 100vh;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1{
+  color: #212529;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 50px;
+}
+.txt{
+  text-align: center;
+  margin-bottom: 17px;
+}
+.txt span{
+  color: #6c757d;
+}
+.container{
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+.switch{
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+}
+.slider{
+  position: absolute;
+  top:0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #e9ecef;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.slider:before{
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+input:checked + .slider:before{
+  transform: translateX(20px);
+}
+.cards{
+  display: flex;
+  justify-content: center;
+  padding: 0px;
+  gap: 50px;
+}
+.card{
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid #dee2e6;
+  padding-block: 37px;
+  padding-inline: 20px;
+  width: 270px;
+  text-align: center;
+}
+.card h2{
+  margin-bottom: 10px;
+}
+.card.one{
+  margin-right: -44px;
+}
+.card.two{
+  background-color: #e9ecef;
+  margin-right: -44px;
+  border: 1px solid #6f42c1;
+}
+.card.one h2, .price.o{
+  color: #007bff;
+}
+.card.two h2, .price.t{
+  color: #6f42c1;
+}
+.card.three h2, .price.th{
+  color: #28a745;
+}
+.price{
+  font-size: 33px;
+  font-weight: bold;
+  margin: 37px;
+}
+ul{
+  list-style: none;
+  margin-bottom: 27px;
+}
+ul li{
+  margin-bottom: 10px;
+  color: #6c757d;
+}
+.button{
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  padding: 10px 20px;
+}
+.button.blue{
+  background-color: #007bff;
+}
+.button.purple{
+  background-color: #6f42c1;
+}
+.button.green{
+  background-color: #28a745;
+}
